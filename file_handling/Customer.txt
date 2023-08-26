@@ -1,0 +1,21 @@
+      ID	NAME	FORM	STREET	POSTBOX	POSTCODE	CITY	COUNTRY	REGION	TELEPHONE	CUSTTYPE	DISCOUNT	LANGU	EMAIL
+1	SAP AG	Firma	Dietmar-Hopp-Allee 16		69190	Walldorf	DE		06227-34-0	B	10	D	info@sap.de
+2	Andreas Klotz	Herr	Pimpinellenweg 9		69190	Walldorf	DE		05344-676792	P	20	D	Andreas.Klotz@sap.com
+3	Hans Bullinger	Herr	Veilchenstraﬂe 12		69119	Heidelberg	DE		02099-44591	P	0	D	Hansi@Bulli.de
+4	Staerck	Frau	Kaiserstr. 55		69115	Heidelberg	DE		07508-66-7886	P	0	D	Farbenblind@gmx.de
+5	Martin	Mister	44 Harolds Road		L07 1AZ	Liverpool	GB			P	0	E	Steve.Martin@hool.uk
+6	Starr	Miss	74 Kings Road		L07 3BC	Liverpool	GB			P	0	E	FCStar@unio.uk
+7	King	Mister	Hyde Park 7		M21 7AB	Manchester	GB			P	0	E	Burger@King.com
+8	Moore	Company		A-312	SW3 4DE	London	GB			P	0	E	Moore@abc.net
+9	Everton FC		Sir Wellington Road		L08 5RZ	Liverpool	GB		332-5678-0	B	0	E	Football.Liverpool@sports.com
+10	Raupp	Herr	Glockenblumenweg 5		8002	Zuerich	CH			P	0	D	HelmutDanielaRaupp@swiss.ch
+11	Ballmann	Herr	Ballmanns Leiden 7		69115	Heidelberg	DE			P	0	D	Ball@mann.net
+12	Radetzky	Frau	Mozartstr. 102		1000	Wien	AT			P	0	D	Radetzky@Marsch.at
+13	Mueller	Firma		44321	68159	Mannheim	DE			B	0	D	Vitamine@mueller.net
+14	Genee	Herr	Albrecht-Duerer-Str. 4		50733	Koeln	DE			P	0	D	Mausklick@cologne.net
+15	Soehnen	Herr	Veilchenstr. 6		1099	Dresden	DE			P	0	D	Pastor.Soehnen@kirche.de
+16	Leihinger Brauerei	Firma	Leopoldsgasse 3		80339	Muenchen	DE			B	5	D	Gutes-Bier@gluck-gluck.de
+17	Ruthenberg	Frau	Hirschheimer Str. 6A		69118	Heidelberg	DE			P	0	D	Briefkasten@ruthi.de
+18	Miller	Herr	Am Sandberg 17		46539	Dinslaken	DE			P	0	E	MisterMiller@box.com
+19	Plum	Herr	Dudenhoeferweg 26		69493	Groﬂsachsen	DE			P	0	D	Feuerrot@asdf.net
+20	Becker	Herr	Wimbledonallee 6		69181	Leimen	DE			P	0	D	Tennisarm@sabrina.de
