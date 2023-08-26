@@ -1,7 +1,7 @@
       ID	NAME	FORM	STREET	POSTBOX	POSTCODE	CITY	COUNTRY	REGION	TELEPHONE	CUSTTYPE	DISCOUNT	LANGU	EMAIL
 1	SAP AG	Firma	Dietmar-Hopp-Allee 16		69190	Walldorf	DE		06227-34-0	B	10	D	info@sap.de
 2	Andreas Klotz	Herr	Pimpinellenweg 9		69190	Walldorf	DE		05344-676792	P	20	D	Andreas.Klotz@sap.com
-3	Hans Bullinger	Herr	Veilchenstraﬂe 12		69119	Heidelberg	DE		02099-44591	P	0	D	Hansi@Bulli.de
+3	Hans Bullinger	Herr	Veilchenstra√üe 12		69119	Heidelberg	DE		02099-44591	P	0	D	Hansi@Bulli.de
 4	Staerck	Frau	Kaiserstr. 55		69115	Heidelberg	DE		07508-66-7886	P	0	D	Farbenblind@gmx.de
 5	Martin	Mister	44 Harolds Road		L07 1AZ	Liverpool	GB			P	0	E	Steve.Martin@hool.uk
 6	Starr	Miss	74 Kings Road		L07 3BC	Liverpool	GB			P	0	E	FCStar@unio.uk
@@ -17,5 +17,5 @@
 16	Leihinger Brauerei	Firma	Leopoldsgasse 3		80339	Muenchen	DE			B	5	D	Gutes-Bier@gluck-gluck.de
 17	Ruthenberg	Frau	Hirschheimer Str. 6A		69118	Heidelberg	DE			P	0	D	Briefkasten@ruthi.de
 18	Miller	Herr	Am Sandberg 17		46539	Dinslaken	DE			P	0	E	MisterMiller@box.com
-19	Plum	Herr	Dudenhoeferweg 26		69493	Groﬂsachsen	DE			P	0	D	Feuerrot@asdf.net
+19	Plum	Herr	Dudenhoeferweg 26		69493	Gro√üsachsen	DE			P	0	D	Feuerrot@asdf.net
 20	Becker	Herr	Wimbledonallee 6		69181	Leimen	DE			P	0	D	Tennisarm@sabrina.de
