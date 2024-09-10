@@ -1,0 +1,20 @@
+parameters
+	screen option(obligatory,no-display,as checkbox,radiobutton group,
+			as listbox visible length )
+	value option (default)
+
+select-options elements(obligatory,no-display,visible length,no-extension,no intervals)
+
+screen elements(skip,uline,block,tabbed block)
+	
+selection screen events	
+	initilization
+        at selection screen output
+	at selection screen on value-request
+	at selection screen on help-request
+	at selection screen
+	start-of-selection
+Note:
+1.parameters:
+type f and xstring data type are not allowed.
+

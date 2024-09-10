@@ -1,0 +1,55 @@
+**Screens
+Note:
+1.To create subscreen and model dialog box change screen type to subscreen or model dialog box.
+2.Subscreen does not have ok_code.
+3.In screen we dont want application toolbar then select without application toolbar in settings under attributes.
+
+***Screens Events(PBO,PAI,POV,POH)
+
+PBO-Process Before Output
+PAI-Process After Output
+POV-Process On Value-Request
+POH-Process On Help-Request
+
+***Screen Elements
+
+Text field
+Input field
+Checkbox
+Radio button
+Pushbutton
+Box
+Subscreen Area
+Tabstrip Control
+Custom Control
+Table Control
+
+Note:
+1.Radio Button:
+select all the radio button then right click-->goto Radio Button Group then click on Define.system will 
+automatically assign the group for radio button and by default 1st radio button will be selected.
+
+2.Make Input Field as
+
+a.Dropdown:Double click on input field-->dropdown:select Listbox with key.also if we want to trigger event
+on dropdown value select then we should maintain fcode.
+
+b.Output Field:Double click on input field-->attributes-->Program-->Unselect Input Field and Select Output only.
+c.Hotspot click:Right click on Input Field-->Under Attribues-->Display-->Select Property: Respond to double-click
+when we click on field pick event will be triggered.We should set event fcode in status.
+
+3.Pushbutton: assign fcode for pushbutton.Double click & maintain in Fct Code.
+4.To make input field as required,right click on field-->goto program tab-->select input as required.
+
+5.while Creating Screen Elements use follwing conventation
+
+text_	: text field
+pb_	: push button
+box_	: box
+subs_ 	: subscreen
+program_cc_screen : custom control
+ts_	: tabstrip
+tab_	: for tab
+
+
+

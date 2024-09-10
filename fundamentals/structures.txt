@@ -1,0 +1,40 @@
+****creating structure using data statement
+DATA: BEGIN OF ls_employee,
+        emplid TYPE i,
+        emplname TYPE c LENGTH 30,
+      END OF ls_employee.
+
+***Assigning values to structure
+ls_employee-emplid = 101.
+ls_employee-emplname = 'abc'.
+
+***Displaying structure component
+WRITE: / 'Employee Id :',ls_employee-emplid,
+       / 'Employee Name:',ls_employee-emplname.
+****
+
+****creating structure using structure type
+TYPES:BEGIN OF st_employee,
+        emplid TYPE i,
+        emplname TYPE c LENGTH 30,
+      END OF st_employee.
+
+DATA ls_employee TYPE st_employee.
+****
+
+****creating structure using ddic structure
+DATA ls_employee TYPE sflight_t.
+****
+
+****creating structure using db table
+DATA ls_flight TYPE sflight.
+****
+
+****create structure using structure
+DATA lwa_employee LIKE ls_employee.
+****
+
+****create structure using internal table
+DATA: lt_flight TYPE TABLE OF sflight,
+      ls_flight LIKE LINE OF lt_flight.
+****

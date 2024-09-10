@@ -1,0 +1,103 @@
+
+****Note: We can create internal table using any of these below:
+**structure
+**structure type and ddic structure
+**with header line
+**table type and ddic table type
+**data base table
+**data statement
+****
+
+****creating Interanl table using structure
+DATA: BEGIN OF ls_employee,
+        empid TYPE i,
+        ename TYPE c LENGTH 30,
+      END OF ls_employee.
+
+*creating standard table
+DATA lt_employee LIKE TABLE OF ls_employee.
+
+DATA lt_employee LIKE SORTED TABLE OF ls_employee WITH UNIQUE KEY emplid.
+
+DATA lt_employee like HASHED TABLE OF ls_employee WITH UNIQUE KEY emplid.
+****
+
+****creating internal table using structure type
+TYPES: BEGIN OF st_employee,
+        emplid TYPE i,
+        emplname TYPE c LENGTH 30,
+      END OF st_employee.
+
+DATA lt_employee TYPE TABLE OF st_employee.
+****
+
+****Create Internal Table with Header Line
+TYPES: BEGIN OF s_employee,
+         empid TYPE i,
+         ename TYPE c LENGTH 30,
+       END OF s_employee.
+
+DATA lt_employee TYPE TABLE OF s_employee WITH HEADER LINE.
+****
+
+****creating internal table using table type
+TYPES tt_employee TYPE st_employee OCCURS 0.
+DATA lt_employee TYPE tt_employee.
+****
+
+***creating internal table using db table
+DATA lt_flight TYPE TABLE OF sflight.
+****
+
+****creating internal table using data statement
+DATA: BEGIN OF lt_employee OCCURS 0,
+        empid TYPE i,
+        ename TYPE c LENGTH 30,
+      END OF lt_employee.
+****
+
+
+
+Operation on internal table
+
+create
+append
+insert
+read
+modify
+delete
+describe
+sort
+collect
+append lines of
+insert lines of
+append initial lines to
+assign local copy of
+delete adjacent duplicates from
+
+**create
+**append
+	append workarea to itab
+**insert
+	insert workarea into table itab
+**read
+	read table itab into workarea with key field_name = value
+**modify
+	
+**delete	
+	delete itab where field_name = value
+**sort
+	sort itab by field_name
+**describe
+	describe table itab lines nooflines
+**append lines of 
+	append lines of itab1 from index_no to index_no to itab2
+**insert lines of 
+	insert lines of itab1 from index_no to index_no to itab2.
+**append initial lines to
+	append initial lines to itab into/assiging workarea/fieldsymbol
+**delete adjacent duplicates from
+	delete adjacent duplicates from itab
+Note: sort itab before using delete adjacent duplicates stmt.
+
+

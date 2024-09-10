@@ -1,0 +1,44 @@
+
+Open SQL(select,insert,update,modify,delete)
+	
+**select
+	select [single] */fieldnames from dbtable 
+	into [table][corresponding fields of] workarea/itab
+	[where fieldname = value]
+
+Note:
+-->If fields selected and itab fields are not same then we use 
+corresponding fields of.
+
+-->If we want only one row as result then we use keyword
+single after select.if we dont specify where condition then 1st record is o/p.
+
+-->we can use aggregate function in select stmt but generally we dont use directly on select stmt
+we select all the records in itab then we perform operations on itab. 
+
+Eg:
+select count(*) from dbtable into no_of_records-->using aggregate function
+OR
+select * from dbtable into table itab.
+describe table itab lines no_of_records.
+
+
+**insert
+	insert dbtable from [table] workarea/itab
+	insert into dbtable values  workarea
+Note:
+insert into: we can't insert mutitple records in dbtable at once.
+
+**update
+	update dbtable from [table] workarea/itab
+**modify
+	modify dbtable from [table] workarea/itab
+**delete
+	delete dbtable from [table] workarea/itab
+	delete from dbtable where fieldname = value
+Note:
+delete from: we can only delete single record from dbtable.
+
+
+
+

@@ -1,0 +1,62 @@
+Data Types 	    types,type,begin of,end of
+Lists	 	    write
+Message         message,id
+Debugging 	    break-point
+Data Objects 	data,like,line of,type ref to,text
+Constants	    constants
+Control Flow 	if,else,endif,case,when,others,endcase,
+		        while,endwhile,do,times,enddo,break,continue,exit,check
+Operators	
+ Arithmetic	    add,subtract,multiply,divide
+ Relational	    eq,lt,gt,le,ge
+ 		        co,ca,cs,cp,
+ Negation 	    ne,not
+ Special	    between,is,initial,assigned,bound,supplied,move,move-crossponding
+
+Clear Objects	clear,refresh,free
+
+String 		    translate,upper,lower,split,concatenate,seperated,condense,search,replace,shift,
+		        left,right,deleting leading
+
+Processing 
+Field Symbols   field-symbols,assign,unassign,create data
+&Data Reference 
+
+Internal Table	table of,standard,hashed,sorted,with unique key,with header line,occurs
+Operations	    insert,into,append,to,modify,delete,adjacent,duplicates,from,loop at,sort by,describe
+                on itab	append lines of,initial lines to
+
+Selections	parameters,select-options,selection-screen,obligatory,no-display,default,visible length,as checkbox,radiobutton group,
+Screen		as listbox visible length,no-extension,no intervals,skip,uline,block,tabbed block,line
+		    set,call screen,subscreen,starting at,ending at,including,leave,program
+
+Selection 	    initialization,at selection screen output,on value-request,help-request,
+screen events	start-of-selection
+ 
+Screens		    module,endmodule,set pf-status,set titlebar,at exit-command,chain,endchain,field
+Screen events	process before output,after input,on value-request,help-request
+
+Subroutines	    form,endform,perform,using,changing,value,local,statics
+Macros		    define,end-of-defination
+Function Module importing,exporting,tables,changing,exception,call function,raise
+
+Open SQL	    select,update,modify(insert,delete already in operations on itab)
+                single,distict,crossponding fields of,for all entries,
+		        cross join,inner,outer,left,right,where,order by
+Agreegate	    count,avg,max,min 	
+Functions
+
+Class		    class,defination,endclass,implementation,deferred,section
+Objects		    create object
+Modifiers	    public,private,protected
+Methods		    methods,method,endmethod,call method,returning,return
+Static		    class-data,class-methods
+Events		    events,raise event,set handler
+Interface	    interface,endinterface,interfaces
+OOP Concepts	inheriting from,abstract,super,final,redefination
+Exception	    try,catch,endtry,raise exception
+
+Program Related include,program,report,
+Some Useful	tables,controls,tabstrip,set update task local,commit and wait
+
+
