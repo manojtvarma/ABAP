@@ -1,0 +1,249 @@
+
+1.ALV(SAP List Viewer)
+    lvc_fieldcatalog_merge
+	
+2.Dialog Prompts
+    f4if_int_table_value_request
+    f4if_field_value_request
+    popup_to_confirm
+    vrm_set_values
+    f4_filename
+    gui_upload --file data to internal table	
+
+3.Formatting
+    conversion_exit_alpha_input
+    conversion_exit_alpha_output
+	
+4.Create Data Dictionary Object
+
+  ddif_tabl_put	--create database table and structure
+  ddif_tabl_activate	--activate table and structure
+  
+  tr_tadir_interface --specify package  
+  ddif_ttyp_put	--create table type
+  ddif_ttyp_activate --activate table type
+  
+  dd_domvalues_get-->get domain values
+  ddif_field_value_get->get all fields details of table
+  ddif_fieldinfo_get-->get dfies
+
+ Others
+	spell_amount
+	convert_to_fraction
+	icon_create
+	rs_set_selscreen_status
+	number_get_next
+	GET_PARAMETER_TCOD
+	NUMBER_CHECK-->Checks whether number lies in the number interval
+	fltp_char_conversion
+	
+5.SAP Commands
+  nend--to log off with confirmation
+  jdbg--debug background job	
+
+6.class and methods
+
+1.cl_gui_custom_container
+constructor(container_name)
+
+2.cl_gui_alv_grid 
+
+Methods
+
+Basic Methods
+	constructor(i_parent)
+	set_table_for_first_display	
+	refresh_table_display
+
+Layout and Structure Information	
+	get_frontend_fieldcatalog
+	get_frontend_layout
+	set_frontend_fieldcatalog
+	set_frontend_layout
+
+Event Handling
+	set_toolbar_interactive-->Trigger event
+
+Generic Functions
+	get_sort_criteria
+	get_filter_criteria
+	get_variant
+	set_sort_criteria
+	set_filter_criteria
+	set_variant
+
+Elements of Grid Control
+	get_selected_rows
+	get_scroll_info_via_id
+	set_scroll_info_via_id
+Others
+	set_ready_for_input
+	set_drop_down_table	
+	register_edit_event(cl_gui_alv_grid=>mc_evt_enter)
+	check_changed_data
+	dispatch
+Events
+	onf4
+	hotspot_click
+	toolbar
+	user_command
+	data_changed
+	
+3.cl_gui_docking_container
+
+constructor(repid,dynnr,extension)
+set_extension 
+set_visible
+
+4.cl_gui_cfw 
+
+static methods
+ set_new_ok_code
+ dispatch
+
+5.cl_gui_alv_grid_base
+
+methods
+ get_grid_modified
+
+7.Some Useful Tables
+	T000-Clients
+	T002-Language keys
+	T005-Countries
+	T006-Unit Of Measurements
+	TCURC-Currency Key
+	TCURX-Decimals Places in currency
+	TADIR-Repository objects
+	TTREE-Defination Table for Structure
+	ICON-Icons table
+	NRIV-Number Range Intervals
+	REPOSRC-Report Source Code
+	SLIN_DESC-Pseudo/Pragma Codes
+	RFCDES-Destination Table for RFC
+	SEOCOMPODF-class/interface exists with state 
+	DEVACCESS-Access Key 
+        	tstcp
+
+Trasport Request Related
+ E070: Header of Request
+ E071: Object Entries of Request 
+	
+8.Some Useful Data Elements
+
+fieldname
+tabname
+timestamp
+ad_smtpadr->for email address
+scrfname->Name of Screen Element
+
+Domain:-
+seoclsname
+
+9.Some Useful Grid Related Structure and table type
+
+structures
+symsg
+syst		
+lvc_s_layo  
+disvariant  
+dfies
+
+table types
+
+ui_functions
+lvc_t_row
+lvc_t_fcat  
+lvc_t_row
+lvc_t_sort
+ttb_button
+vrm_values
+match_result_tab
+
+10.Type Groups
+
+abap
+icon
+col 
+sym 
+slis
+
+11.Reports
+
+afx_code_scanner
+
+12.Some Useful FMs
+
+i.SAP list Viewer 
+reuse_alv_grid_display-->Display Grid Without Creating Screens
+reuse_alv_list_display
+
+ii.Dictionay & ABAP tools Related FMs
+ddut_domvalues_get-->get all the values of domain
+rs_dd_show-->to show dictionary objects types
+rs_tool_access-->to show function module,function group,class & interface tools
+check_exist-->check existance of Transport Objects
+ddif_status_get-->check state of ddic objects
+rs_function_active_check-->check state of function module
+
+iii.Application Log Related APIs
+bal_log_create
+bal_log_msg_add
+bal_db_save
+bal_bsp_log_display
+bal_log_msg_delete_all
+
+iv.trasport related FMs
+tr_release_request-->to release the request/task
+
+13.Some Useful ABAP Statements
+
+GET TIME STAMP FIELD
+SUBMIT
+GET CURSOR FIELD
+CONVERT DATE
+CALL TRANSFORMATION
+EXPORT
+IMPORT
+
+14.cl_abap_exceptional_values
+	get_min_value(minimum value of predefined types)
+	get_max_value
+cl_abap_dyn_prg
+cl_abap_gzip
+ compress_binary  
+ decompress_binary
+cl_sxml_string_reader
+cl_sxml_string_writer
+cl_abap_matcher
+cl_abap_regex
+
+15.background job related FMs
+
+bp_start_date_editor
+get_print_parameters
+
+job_open-->create job and it returns unique job number.
+job_submit OR submit stmt-->add job step to background job
+job_close-->submit job to background processing system.
+
+
+16.others
+----------
+FUNCTION_IMPORT_INTERFACE-->get functions paramters import,export...etc
+FILE_VALIDATE_NAME -->to validate file name before using it
+FREE_SELECTIONS_RANGE_2_WHERE->to prepare where clause from select options of user selections
+RPY_DYNPRO_READ
+SEO_METHOD_SIGNATURE_GET
+
+17.Tables for Secondary Index
+DD12L
+DD17S
+
+18.Assignments of Logon/Server Groups to Instances
+RZLLITAB
+
+CL_REST_HTTP_HANDLER
+CL_REST_RESOURCE
+/UI2/CL_JSON
+CL_HTTP_CLIENT
+

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><templates><template autoinsert="true" context="ABAP" deleted="false" description="Add Record to Selections Table" enabled="true" name="addSelection">APPEND INITIAL LINE TO lt_selections ASSIGNING FIELD-SYMBOL(&lt;lwa_selection&gt;).&#13;
+&lt;lwa_selection&gt; = VALUE #( fieldname  = lv_fieldname&#13;
+                           darea  = lv_darea&#13;
+                           selopt = VALUE #( ( sign   = 'I'&#13;
+                                               option = 'EQ'&#13;
+                                               low    = lv_value ) ) ).</template><template autoinsert="true" context="ABAP" deleted="false" description="Append Work Area to Internal Table" enabled="true" name="append">APPEND lwa_data TO lt_data.</template><template autoinsert="true" context="ABAP" deleted="false" description="Append Initial Line to Internal Table" enabled="true" name="appendInitialLine">APPEND INITIAL LINE TO lt_data ASSIGNING FIELD-SYMBOL(&lt;lwa_data&gt;).</template><template autoinsert="true" context="ABAP" deleted="false" description="Read using Assign" enabled="true" name="assign">ASSIGN lt_data[ fieldname = value ] TO FIELD-SYMBOL(&lt;lwa_data&gt;).&#13;
+IF sy-subrc EQ 0.&#13;
+&#13;
+ENDIF.&#13;
+</template><template autoinsert="true" context="ABAP" deleted="false" description="Assign Component" enabled="true" name="assignComponent">ASSIGN COMPONENT lv_fieldname OF STRUCTURE ls_data TO FIELD-SYMBOL(&lt;lv_value&gt;).&#13;
+IF sy-subrc EQ 0.&#13;
+&#13;
+ENDIF.</template><template autoinsert="true" context="ABAP" deleted="false" description="Case block" enabled="true" id="com.sap.adt.tools.sources.ui.templates.caseBlock" name="case">case ${variable}.
+  when ${value}.
+    ${word_selection}${cursor}
+endcase.</template><template autoinsert="true" context="ABAP" deleted="false" description="Check sy-subrc " enabled="true" name="check">CHECK sy-subrc EQ 0.</template><template autoinsert="true" context="ABAP" deleted="false" description="Check Dynamic Table Before Select" enabled="true" name="checkTable">TRY.&#13;
+	  lv_tabnm = cl_abap_dyn_prg=&gt;check_table_name_str( val       = lv_tabnm&#13;
+                                                        packages  = /vta/if_bcon=&gt;mc_space ).&#13;
+&#13;
+  CATCH cx_root INTO DATA(lref_error).&#13;
+    DATA(lv_message) = lref_error-&gt;get_text( ).&#13;
+    DATA(lv_long_message) = lref_error-&gt;get_longtext( ).&#13;
+&#13;
+ENDTRY.</template><template autoinsert="true" context="ABAP" deleted="false" description="Constants" enabled="true" name="constants">CONSTANTS: BEGIN OF c_abap,&#13;
+             true  TYPE boolean VALUE 'X',&#13;
+             false TYPE boolean VALUE '',&#13;
+           END OF c_abap.</template><template autoinsert="true" context="ABAP" deleted="false" description="Create Data" enabled="true" name="createData">DATA lref_data TYPE REF TO data.&#13;
+FIELD-SYMBOLS &lt;lt_data&gt; TYPE table.&#13;
+&#13;
+CREATE DATA lref_data TYPE TABLE OF (lv_tabname).&#13;
+ASSIGN lref_data-&gt;* TO &lt;lt_data&gt;.&#13;
+CHECK sy-subrc EQ 0.</template><template autoinsert="true" context="ABAP" deleted="false" description="For In Loop Example" enabled="true" name="forInLoop">objid_t = VALUE #( FOR &lt;lwa_request&gt; IN lt_materials&#13;
+    				( objid = &lt;lwa_request&gt;-mtrnr ) ).</template><template autoinsert="true" context="ABAP" deleted="false" description="FOR IN Loop with Where Clause - Example" enabled="true" name="forInWhereClause">lt_dopsl = VALUE #( BASE lt_dopsl FOR &lt;lwa_dopsl&gt; IN lwa_dodoc_infocus-x-dopsl&#13;
+                                       WHERE ( versn EQ gs_variables-version_infocus AND contr EQ &lt;lv_contr&gt; )&#13;
+                      ( CORRESPONDING #( &lt;lwa_dopsl&gt; ) ) &#13;
+                  ).</template><template autoinsert="true" context="ABAP" deleted="false" description="If block" enabled="true" id="com.sap.adt.tools.sources.ui.templates.ifBlock" name="if">IF sy-subrc EQ 0.
+  
+ENDIF.</template><template autoinsert="true" context="ABAP" deleted="false" description="Infinite Loop for Specific User " enabled="true" name="infiniteLoop">****Temp Code for Debugging Purpose&#13;
+IF sy-uname EQ 'MVARMA'.&#13;
+   DO.&#13;
+   ENDDO.&#13;
+ENDIF.&#13;
+****</template><template autoinsert="true" context="ABAP" deleted="false" description="Insert Work Area into Internal Table" enabled="true" name="insert">INSERT lwa_data INTO TABLE lt_data.</template><template autoinsert="true" context="ABAP" deleted="false" description="Insert Using Value Operator Example" enabled="true" name="insertUsingValue">lt_flight = VALUE #( ( carrid = 'AA' &#13;
+					   connid = '17' &#13;
+                       fldate = '15.12.2019' )&#13;
+                     &#13;
+                     ( carrid = 'AA' &#13;
+                       connid = '17' &#13;
+                       fldate = '16.12.2019' ) ).&#13;
+</template><template autoinsert="true" context="ABAP" deleted="false" description="Local class" enabled="true" id="com.sap.adt.tools.sources.ui.templates.localClass" name="lcl">class ${lcl_} definition create ${private}.
+		
+  ${cursor}public section.
+  protected section.
+  private section.
+  
+endclass. 
+
+class ${lcl_} implementation.
+
+endclass.</template><template autoinsert="true" context="ABAP" deleted="false" description="Line Exists" enabled="true" name="lineExists">line_exists( lt_data[ fieldname = value ] )</template><template autoinsert="true" context="ABAP" deleted="false" description="Loop-at-assigning block" enabled="true" id="com.sap.adt.tools.sources.ui.templates.loopAtAssigningBlock" name="loopAtAssigning">LOOP AT lt_data ASSIGNING FIELD-SYMBOL(&lt;lwa_data&gt;).
+  
+ENDLOOP.</template><template autoinsert="true" context="ABAP" deleted="false" description="Read Work Area with Value Operator" enabled="true" name="readWithValue">lwa_flight = VALUE #( lt_flight[ carrid = 'AA' &#13;
+                                 connid = '17' &#13;
+                                 fldate = '02.05.2019' ] OPTIONAL ).</template><template autoinsert="true" context="ABAP" deleted="false" description="Select from Dynamic Table" enabled="true" name="selectFromDynTable">DATA lref_data TYPE REF TO data.&#13;
+FIELD-SYMBOLS &lt;lt_data&gt; TYPE table.&#13;
+&#13;
+CREATE DATA lref_data TYPE TABLE OF (lv_tabname).&#13;
+ASSIGN lref_data-&gt;* TO &lt;lt_data&gt;.&#13;
+CHECK sy-subrc EQ 0.&#13;
+&#13;
+DATA(lv_where) = |fieldname EQ { cl_abap_dyn_prg=&gt;quote( val = value )  }|.&#13;
+&#13;
+SELECT * FROM (lv_tabname)&#13;
+where (lv_where)&#13;
+INTO TABLE @&lt;lt_data&gt;.</template><template autoinsert="true" context="ABAP" deleted="false" description="Select Into Table" enabled="true" name="selectIntoTable">SELECT * FROM tablename&#13;
+INTO TABLE @DATA(lt_data).</template><template autoinsert="true" context="ABAP" deleted="false" description="Select on Internal Table Example" enabled="true" name="selectOnInternalTable">SELECT MAX( contr )&#13;
+FROM @lwa_dodoc_infocus-x-dopsl AS lt_posting_log&#13;
+INTO @DATA(lv_posting_counter).</template><template autoinsert="true" context="ABAP" deleted="false" description="Sequential Read on Generically Typed Table" enabled="true" name="sequentialReadOnGeneric">"# EC CI_ANYSEQ</template><template autoinsert="true" context="ABAP" deleted="false" description="Sequential Read on Hashed Table" enabled="true" name="sequentialReadOnHashed">"# EC CI_HASHSEQ</template><template autoinsert="true" context="ABAP" deleted="false" description="Sequential Read on Sorted Table" enabled="true" name="sequentialReadOnSorted">"#EC CI_SORTSEQ</template><template autoinsert="true" context="ABAP" deleted="false" description="Sequential Read on Standard Table" enabled="true" name="sequentialReadOnStandard">"#EC CI_STDSEQ</template><template autoinsert="true" context="ABAP" deleted="false" description="Add Single Quote" enabled="true" name="singleQuote">cl_abap_dyn_prg=&gt;quote( val = value )</template><template autoinsert="true" context="ABAP" deleted="false" description="Try-catch-into block" enabled="true" id="com.sap.adt.tools.sources.ui.templates.tryCatchIntoBlock" name="tryCatchInto">TRY.
+
+   CATCH cx_root INTO DATA(lref_error).
+     DATA(lv_message) = lref_error-&gt;get_text( ).
+     DATA(lv_long_message) = lref_error-&gt;get_longtext( ).
+
+ENDTRY.
+</template><template autoinsert="true" context="ABAP" deleted="false" description="Value Operator" enabled="true" name="value">lwa_flight = VALUE #( carrid = 'AA'&#13;
+                      connid = '17'&#13;
+                      fldate = '02.05.2019').&#13;
+</template><template autoinsert="true" context="ABAP" deleted="false" description="Where Clause Prepare" enabled="true" name="whereClausePrep">DATA(lv_where) = |fieldname EQ { cl_abap_dyn_prg=&gt;quote( val = value )  }|.</template></templates>

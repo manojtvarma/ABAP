@@ -1,0 +1,113 @@
+ABAP(advanced business application programming)
+
+Basics
+Data Types
+ 	elementary[predefined,user defined]
+	reference 
+ 	complex[structurene,internal table]
+Predefined Elementary Tata Types
+	fixed Length
+ 	 numeric(i,f,p)
+	 character(c,n,d,t)
+	 hexadecimal(x)
+	variable length(string,xstring)
+Predefined Dictionary Types(clnt,lang,dats,tims,char,numc,curr,cuky,quan,unit,dec,string...)
+Operators
+	arithmetic operators(+,-,*,/,mod,**)
+	assignment Operators(=)	
+	relational operators
+		for all datatype(<,>,<=,>=,=,<>,between)
+		for char datatype(cs,cp etc)
+	boolean operators(and,or,not)
+	literal Operator(&)
+	casting(?=)
+	
+Control Flow Statements
+	if 
+	case
+	do and while loop
+	continue,check,exit 
+
+String Functions(strlen,concatenate,replace,translate,condense,split,shift,find)
+Clear,refresh and free statement
+Data Objects(Variables,Structure,Internal table)
+	Variables
+		static variables(statics)
+		reference variables(type ref to) 
+		system variables(sy-mandt,sy-tabix,sy-subrc,sy-ucomm,sy-repid,sy-dynnr)
+	Structure
+		create structure(using data statement,dictionary structure,DB table,internal table)
+		move and move-crossponding
+	Internal table(standard table,sorted table,hashed table)
+		Operation on internal table(create,append,insert,read,modify,delete,describe,sort,collect)
+		Create Internal table using(structure,table type,db table)
+		Others operations(append lines of,insert lines of,assign local copy of,append initial lines to)
+
+Modularization(functional module,subroutines,macros)
+Field Symbols and Data Reference
+
+ABAP Dictionary
+	Domain(data type,values,routine)
+	Data Type
+		Data Element(domain,search help,field label,search help) 
+		Structure type(flat,deep,nested structure)
+		Table type(using structure type,db table)
+	Database table
+		create database(key field,foreign key,delivery class,techical settings)
+		include and append structure in db table
+		Text Table
+	Lock Object
+	Search Help
+	Type Group
+	View(database,projection,maintenance,help)
+
+View Cluster	
+Open SQL(select,insert,update,modify,delete)
+Messages
+
+
+ABAP objects
+	create class,create variable and methods,create object,call method and access variable
+	visibility(public,private,protected) for variables and methods
+	constructor(Instance constructor,static constructor)
+	Inheritance(abstract,final,static)
+	Polymorphism
+	Exception(try,catch,raise exception,raising)
+	Events(create event,raise event,create method to handle event,register method to handle event)
+
+Interface
+	create interface in abap program and dictionary
+	access variables and method of interface 
+
+Selection Screens
+Module Pool Programming
+	
+ALV(SAP List Viewer) Grid
+	create container(custom,docking)
+	create grid(variant,layout)
+	grid data display
+	add button,row color
+
+basic math functions
+comments 
+debugging
+
+	
+Note:	
+**Selector
+	structure component selector(-)
+	object component selector(->)
+	class componenet selector(=>)
+	dereferencing operator(->*)
+	interface Component Selector(~)	
+
+**AMU(Access Maintenance Update)	
+	Access(read,view)
+	Update(check single changes,check changes,save,update,update_db)
+	Maintenance
+**ABAP Developer Roles
+	Reports
+	Interfaces
+	Conversion Programs
+	Extension(Enhancement,Modification,Development)
+	Forms(SAP Script,Smart Forms,Adobe Forms)

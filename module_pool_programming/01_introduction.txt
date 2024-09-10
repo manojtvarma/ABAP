@@ -44,12 +44,12 @@ when we click on field pick event will be triggered.We should set event fcode in
 5.while Creating Screen Elements use follwing conventation
 
 text_	: text field
-pb_	: push button
+pb_	    : push button
 box_	: box
 subs_ 	: subscreen
 program_cc_screen : custom control
-ts_	: tabstrip
-tab_	: for tab
+ts_	              : tabstrip
+tab_	          : for tab
 
 
 

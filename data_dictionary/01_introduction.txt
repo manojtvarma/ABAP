@@ -1,0 +1,7 @@
+Naming Convention:
+
+structure type: s_
+table type    : t_
+Database Table: t*
+Text Table    : t**t
+Views	      : v_
